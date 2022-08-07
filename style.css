@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap');
+body {
+    position: relative;
+    width: 100vw; 
+    height: 100vh;
+    /* opacity:1; */
+} 
+*{
+    font-family: sans-serif;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-image:url('./cuteBear3.jpg');
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    width:100vw;
+    height: 100vh; 
+    /* opacity:90%; */
+}
+
+#TAdder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#TAdder>input{
+    padding: 0.5rem 0.75rem;
+    border-right:0rem;
+}
+#TAdder>button{
+    padding:0.6rem 1.1rem;
+    background: blueviolet;
+    color: snow;
+    border-left:0rem
+    /* width:10%; */
+}
+.data-task{
+    border-radius:.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:auto;
+    justify-content: space-between;
+    background-color: #fff;
+    padding:.5rem 0rem;
+    margin-top:0.5rem;
+    margin-inline:2rem;
+    margin-block:1.5rem;
+    transition: all 500ms ease-in-out;
+}
+.data-task:hover{
+    box-shadow:0rem 0rem 1rem grey;
+    border:.2rem solid mediumslateblue !important;
+    cursor:pointer;
+}
+.data-task-data:not(.data-task-data:nth-child(3)){
+    padding:0rem 3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width:10rem;
+    text-align: center;
+    font-size:1.5rem;
+    text-transform: capitalize;
+    font-weight:500;
+}
+.opDiv{
+    padding:0rem !important;
+    text-align:center;
+}
+.data-task-data:nth-child(3){
+    color:blueviolet;
+    display: block;
+    margin: auto;
+    font-size:2.5vw;
+    padding:.5rem;
+    text-align: center;
+}
+
+.data-cross{
+    cursor: pointer;
+    padding:0rem !important;
+    text-align: center;
+    font-size:1.3rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#tasks{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    margin-top:1rem;
+    align-items: center;
+    justify-content: center;
+}
+#Priority, #EndDate{
+width:17rem;
+/* heig; */
+font-size: 1rem;   
+padding: 0.5rem 0.75rem;
+}
+.opTab{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    background:#fff;
+    width:fit-content;
+    padding:1rem 1rem 1rem 0rem;
+    border:0.06rem solid black;
+    border-radius:0.4rem;
+    margin:0;
+}
+.opTab>ul{
+    margin:0;
+    padding-inline-start: 0;
+}
+#ChangePrioDiv{
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding:1rem 1rem 1rem 1rem;
+    margin:0rem 0rem 0rem 0rem;
+    visibility:hidden;
+    float:inline-end;
+
+    visibility: visible;
+
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.changeOptions>input, .changeOptions>textarea{
+    width:30vw;
+    margin:0rem 0rem 0rem 1rem;
+    padding-inline-start: 0.5rem;
+}
+.changeOptions{
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    padding:1rem 1rem 1rem 1rem;
+    margin:0;
+    visibility:hidden;
+
+
+    visibility: visible;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    float:right;
+}
+#CompleteTaskDiv{
+    right:0;
+    /* align-items:right; */
+}
+#opTab{
+    padding:0.5rem;
+}
+
+#ChangeP,#ChangeE, #ChangeT{
+    max-width: 5.6rem;
+    float: unset;
+}
+#title{
+    font-size: 7.5vw;
+    color: orange;
+    font-weight: bold;
+    text-shadow: 0rem 1rem 1rem black;
+    text-align: center;
+}
+#statusOfAll{
+    font-style: italic;
+    /* padding: 1.5rem 0rem 1.5rem 0rem; */
+    font-size: 2.5vw;
+    color: lightgoldenrodyellow;
+    -webkit-text-stroke-width: 0.05rem;
+    -webkit-text-stroke-color: beige;
+    /* display: flex; */
+    /* text-shadow: 0.2rem 1rem 0.2rem aliceblue; */
+    justify-content: center;
+}
+#StatusD{
+    font-style: italic;
+    /* padding: 1.5rem 0rem 1.5rem 0rem; */
+    font-size: 3vw;
+    -webkit-text-stroke-width: 0.05rem;
+    -webkit-text-stroke-color: beige;
+    color: lightgoldenrodyellow;
+    /* display: flex; */
+    /* text-shadow: 0.2rem 1rem 0.2rem aliceblue; */
+    justify-content: center;
+}
+#FStatus{
+    float: right;
+    /* padding-right: 3vw; */
+    padding: 1.5vw 4vw 1.5vw 1.5vw;
+}
+#addForm{
+    float: left;
+    padding: 0rem 0rem 0rem 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    color: blanchedalmond;
+    font-weight: bold;
+    box-shadow: 0rem 0rem 2rem blueviolet;
+    background-color: rgb(185, 12, 185);
+    border-radius: .5rem;
+}
+#TAdder-text{
+    padding: 2rem 0rem 0rem 1rem;
+    font-size: 4rem;
+    /* max-width: 3vw; */
+}
+#TAdder{
+    padding: 1rem 0rem 0rem 5rem;
+}
+#TaskHandler{
+    display:block;
+}
+#Form-tasks{
+    display:flex;
+    flex-direction: column;
+}
+#Tasklist{
+    /* background: linear-gradient(to bottom right,orange, yellow); */
+    /* width: 110vw;
+    overflow: hidden; */
+    text-overflow: ellipsis;
+    /* background:-webkit-linear-gradient(to bottom right,orange, yellow);
+    -webkit-background-clip: text; */
+    /* color: blueviolet; */
+    font-size: 2.5vw;
+    padding:4vw;
+}
+#Tasklist>p{
+    background:-webkit-linear-gradient(deeppink, gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 7vw;
+    text-shadow: -0.4rem 0rem 8.4rem orange;
+}
+#hiddenElements{
+    display:none;
+}
+.data-task-due{
+    font-weight: 600;
+}
+#Form{
+    flex-wrap: wrap;
+}
+#TaskHandler{
+    width:100vw;
+    display:block;
+}
+#Itext{
+    font-size: 1rem;
+}
+/* #addForm{
+    display:none;
+} */
+.addNewT{
+
+    float: right;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(189, 43, 226);
+    color: cornsilk;
+    font-size: 4rem;
+    border-radius: 15rem;
+        /* margin: 0; */
+    cursor: pointer;
+    align-items: center;
+}
+.innerPlus{
+    padding: 0.5rem 1.2rem;
+    /* cursor:none; */
+    
+}
+.taskAdderDiv{
+    align-items: center;
+    justify-content: right;
+    position: fixed;
+    bottom: 2.5vw;
+    width: 100vw;
+    display: flex;
+    right: 2rem;
+}
+.taskFormAdder{
+    margin:0rem 1rem 0rem 0rem;
+    float: right;
+    display: flex;
+}
+@media only screen and (max-width:420px) {
+    #TAdder{
+        justify-content: space;
+        text-align: right;
+    }
+    .addNewT{
+        font-size: 2rem;
+        border-radius: 22rem;
+    }
+    #Priority, #EndDate{
+        width: 12.6rem;
+        font-size: 0.85rem;
+        /* padding-left: 12rem; */
+    }
+    #EndDate{
+        /* padding-left: 13rem; */
+
+    }
+    .labels{
+        display: none;
+    }
+    #TAdder{
+        /* padding-left: 10rem; */
+    }
+    #TAdder>button{
+        padding:0.6rem 0.5rem;
+    }
+    #Itext{
+        width: 10rem;
+        /* padding:0rem 0rem 0rem 2rem; */
+    }
+    .centerElemTAdder{
+        padding: 1rem 0rem 0rem 4.5rem !important;
+    }
+    .taskFormAdder{
+        margin:0;
+    }
+    .taskAdderDiv{
+        right: 0;
+    }
+
+}
+.form{
+    display:none;
+}
+.hiddenTAdder{
+    display: none;
+}

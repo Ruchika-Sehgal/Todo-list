@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>To Do List</title>
+    <script src="https://kit.fontawesome.com/1bb8ce417b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="title-statusBar">
+        <h1 id="title">Your To Do List</h1>
+        <div id="FStatus">
+        <span id="StatusD">Status: </span><span id="statusOfAll">0 tasks present</span>
+    </div>
+    </div>
+<!-- <hr color="red" thickness="1rem"/> -->
+    <div id="Form-tasks">
+        <div class="hiddenTAdder">
+        <div class="form">
+        <form id="addForm" action="#">
+            
+            <!-- <div id="TAdder-text">
+                Add new Task:  -->
+            <!-- </div> -->
+
+            
+            <div id="Form">
+                <div id="TAdder">
+                    <label class="labels" style="color: cyan; padding: 0rem 1.5rem 0rem 0rem;font-size: 1.4rem;">Title: </label>
+                    <input id="Itext" type="text" required placeholder="Enter tittle here... ">
+                    <button type="submit" id="add">Add</button>
+                </div>
+                <center class="centerElemTAdder" style="padding: 1rem 0rem 0rem 1.5rem; align-self:flex-end">
+                    <label class="labels" style="color: cyan; padding: 0rem 1rem 0rem 0rem; font-size: 1.4rem;">Priority: </label>
+                    <input id="Priority" required type="number" placeholder="Specify task priority between 0-5" max="5" min="1" required>
+                    
+                </center>
+                <center class="centerElemTAdder" style="padding: 1rem 0rem 0rem .5rem; align-self:flex-end">
+                    <label class="labels" style="color: cyan; padding: 0rem 1rem 0rem 0rem; font-size: 1.4rem;">End date: </label>
+                    <input id="EndDate" type="date" onchange="checkDate(this)" required>
+                    
+                </center>
+            </div>
+    </form>
+</div>
+</div>
+    <br>
+    <div id="TaskHandler">
+       <div id="Tasklist">
+           <!-- <center> -->
+               <p>Tasklist</p>
+
+           <!-- </center> -->
+
+       </div>
+        <div id="tasks">
+            
+        </div>
+    </div>
+    </div>
+    <div id="appendingDiv">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="hiddenElements">
+
+        <div id="ChangePrioDiv" class="changeOptions">
+            <label> Priority: </label>
+            <input class="changeI" type="number" required type="number" placeholder="Specify task priority between 0-5" max="5" min="1" >
+            <input type="submit" id="ChangeP" value="Change">
+        </div>
+        <div id="ChangeEndDateDiv" class="changeOptions">
+            <label > New End Date:</label>
+        <input type="date" class="changeI" required placeholder="Specify new Enddate" min="Date.today" >
+        <input type="submit" id="ChangeE" value="Change">
+    </div>
+    <div id="ChangeTaskDiv" class="changeOptions">
+        <label> Corrected Task data:</label>
+        <textarea id="ChangeTArea" class="changeI" cols="30" rows="10"> abc</textarea>
+        <input type="submit" id="ChangeT" value="Change">
+        <!-- <input type="number" required type="number" placeholder="Specify task priority between 0-5" max="5" min="1" > -->
+    </div>
+    <div id="opTab" class="opTab visible">
+        <ul style="list-style-type:none; cursor:pointer">
+            <li id="PriorityChangeOp">Change Priority</li>
+            <li id="editTOp">Edit task</li>
+            <li id="editEnddateOp">Change End-date</li>
+        </div>
+        <div id="additionalDiv">
+            
+        </div>
+    </div>
+    <div class="taskAdderDiv">
+        <div class="taskFormAdder">
+
+        </div>
+        <div class="addNewT">
+            <div class="innerPlus">&plus;</div>
+        </div>
+    </div>
+    </body>
+    
+</html>
